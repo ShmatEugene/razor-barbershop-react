@@ -1,5 +1,6 @@
 import React from 'react';
-import Select from '../UI/Select/Select';
+import Select from './HeaderSelect/HeaderSelect';
+import HeaderDatePicker from './HeaderDatePicker';
 
 export default function Reservation() {
   return (
@@ -10,7 +11,17 @@ export default function Reservation() {
         </div>
         <div className="header-reservation-data-box sh-white-font d-flex justify-content-center align-items-center h-100">
           <div className="header-reservation-service align-self-center d-flex align-items-center">
-            <Select />
+            <Select
+              selectOptions={[
+                'Haircut & Style',
+                'Creative cut',
+                'Beard sculpt',
+                'Wash & Restyle',
+                'Beard trim',
+                'Children`s haircut',
+                'Scissor Cut',
+              ]}
+            />
           </div>
         </div>
       </div>
@@ -33,6 +44,7 @@ export default function Reservation() {
           <input id="sh-header-datepicker" type="text" />
         </div>
       </div>
+      <HeaderDatePicker />
       <div className="sh-timepicker-box sh-pall-20">
         <div className="header-reservation-title sh-grey-font sh-tw-3 text-center">
           <span>choose time</span>

@@ -366,6 +366,103 @@ Margin Right
 
 
 /*---------------------------------------------------------------------
+                                UI 
+-----------------------------------------------------------------------*/
+
+/*----------------
+    Select
+----------------*/
+.ui-select-label {
+    text-align: center;
+    margin-right: 0;
+    font-family: "Lora", serif;
+    font-size: 22px;
+  }
+  
+  .ui-select-arrow {
+    margin-top: 3px;
+  }
+  
+  .ui-select-popup {
+    position: absolute;
+    bottom: 15px;
+    background: #1c1d1d;
+    z-index: 100;
+    box-shadow: 2px 2px 12px -1px #141414;
+  }
+  .ui-select-popup li {
+    padding: 5px 1em 5px 1em;
+    text-align: center;
+    font-family: "Lora", serif;
+    font-size: 16px;
+  }
+  .ui-select-popup li:hover {
+    background: #141414;
+  }
+  .ui-select-popup li.active {
+    background: #141414;
+  }
+  
+  
+/*----------------
+  Calendar
+----------------*/
+.ui-calendar {
+    background: #1c1d1d;
+    padding: 22px 25px 15px 25px;
+    position: absolute;
+    width: 20em;
+    box-shadow: 2px 2px 12px -1px #141414;
+    z-index: 100;
+}
+
+.ui-calendar-control {
+    padding: 8px;
+    font-size: 11px !important;
+    cursor: pointer !important;
+    line-height: 11px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.ui-calendar-title {
+    font-family: 'Lora', serif;
+    color: #C19B76;
+    font-size: 15px;
+    font-weight: bold;
+    margin: auto !important;
+}
+
+.ui-calendar table {
+    font-size: .9em;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+.ui-calendar table thead tr th {
+    color: #878787;
+    font-weight: 300;
+    font-size: 13px;
+    text-transform: capitalize;
+    text-align: center;
+    padding: .7em .3em;
+}
+
+.ui-calendar table td {
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 6px 0px;
+    font-family: 'Roboto', serif;
+}
+
+.ui-calendar table td.active {
+    background: #C19B76;
+    color: #e0e0e0;
+}
+
+/*---------------------------------------------------------------------
                                 Header
 -----------------------------------------------------------------------*/
 

@@ -1,17 +1,7 @@
 import React from 'react';
-import './Select.scss';
+import './HeaderSelect.scss';
 
-export default function Select() {
-  const selectOptions = [
-    'Haircut & Style',
-    'Creative cut',
-    'Beard sculpt',
-    'Wash & Restyle',
-    'Beard trim',
-    'Children`s haircut',
-    'Scissor Cut',
-  ];
-
+export default function Select({ selectOptions }) {
   const [isPopUpOpen, setPopUpState] = React.useState(false);
   const [activeItem, setActiveItem] = React.useState(selectOptions[0]);
   const selectLabelRef = React.useRef(null);

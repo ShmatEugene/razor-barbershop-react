@@ -2,7 +2,6 @@ import React from 'react';
 import Slider from 'react-slick';
 
 function SampleNextArrow({ onClick }) {
-  //const { onClick } = props;
   return (
     <div onClick={onClick} className="header-slider-arrow-next trans-03">
       <span className="header-slider-arrow-next-1"></span>

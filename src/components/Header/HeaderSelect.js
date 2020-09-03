@@ -1,5 +1,4 @@
 import React from 'react';
-import './HeaderSelect.scss';
 
 export default function Select({ selectOptions }) {
   const [isPopUpOpen, setPopUpState] = React.useState(false);

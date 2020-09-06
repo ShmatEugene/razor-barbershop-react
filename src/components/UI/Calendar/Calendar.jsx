@@ -42,7 +42,7 @@ export default function Calendar(props) {
   };
 
   return (
-    <div className="ui-calendar">
+    <div className={classnames('ui-calendar', { top: props.position === 'top' })}>
       <div className="ui-calendar-header d-flex">
         <span
           className={classnames('ui-calendar-control', {

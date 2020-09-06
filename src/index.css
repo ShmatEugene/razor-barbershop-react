@@ -903,6 +903,8 @@ Margin Right
   background: #1c1d1d;
   z-index: 100;
   box-shadow: 2px 2px 12px -1px #141414;
+  min-width: 100px;
+  width: 100%;
 }
 .ui-select-popup li {
   padding: 5px 1em 5px 1em;
@@ -927,6 +929,10 @@ Margin Right
   width: 20em;
   box-shadow: 2px 2px 12px -1px #141414;
   z-index: 100;
+}
+
+.ui-calendar.top {
+  top: -230px;
 }
 
 .ui-calendar-control {

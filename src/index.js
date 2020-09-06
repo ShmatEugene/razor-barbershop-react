@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css/animate.css';
 import 'slick-carousel/slick/slick.css';
 import '@fortawesome/fontawesome-free/css/all.css';
+import './css/flaticon.css';
 import './index.css';
 
 import App from './App';

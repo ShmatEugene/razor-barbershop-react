@@ -1,5 +1,10 @@
 import React from 'react';
 import Header from './components/Header/Header';
+import Button from './components/UI/Button';
+import Team from './components/Team/Team';
+
+import about1 from './assets/img/about1.jpg';
+import about2 from './assets/img/about2.jpg';
 
 function App() {
   return (
@@ -12,10 +17,10 @@ function App() {
           <div className="row">
             <div className="col-md-7">
               <div className="about-first-img-block">
-                <img src="images/about1.jpg" className="about-first-img w-100" alt="about-img" />
+                <img src={about1} className="about-first-img w-100" alt="about-img" />
               </div>
               <div className="about-second-img-block position-absolute">
-                <img src="images/about2.jpg" className="about-second-img w-100" alt="about-img" />
+                <img src={about2} className="about-second-img w-100" alt="about-img" />
               </div>
               <div className="about-video-button-block sh-pl-20 position-absolute">
                 <a
@@ -53,9 +58,9 @@ function App() {
                 </p>
               </div>
               <div className="about-us-video-block sh-mt-20">
-                <a href="/#" className="sh-button sh-accent-font sh-transparent-button trans-03">
+                <Button classes="sh-accent-font sh-transparent-button trans-03" to="/#">
                   About us
-                </a>
+                </Button>
               </div>
             </div>
           </div>
@@ -140,182 +145,7 @@ function App() {
         </div>
       </section>
       {/* Services end !*/}
-      {/* Team !*/}
-      <section className="team-section sh-mt-100">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="team-bg w-100 sh-black-bg">
-              <div className="container">
-                <div className="team-content">
-                  <div className="heading-title sh-font-white text-center">
-                    <p className="sh-font-gray">Lorem ipsum</p>
-                    <h2>Meet the team</h2>
-                  </div>
-                  <div className="team-members-list team-members-slider  sh-mt-80">
-                    <div className="team-member-card position-relative">
-                      <img src="images/team/team1.png" alt="team" />
-                      <div className="position-absolute team-member-overlay position-relative sh-pall-40 trans-03">
-                        <div className="team-member-social d-flex sh-white-font trans-03">
-                          <a href="/#">
-                            <i className="fa fa-facebook"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-twitter"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-instagram"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-vk"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-linkedin"></i>
-                          </a>
-                        </div>
-                        <div className="team-member-info sh-pb-60 trans-03 position-absolute">
-                          <h5 className="sh-white-font">Sondra Pollard</h5>
-                          <p className="sh-gray-font sh-mb-0 sh-pt-5 sh-tw-4">Barber</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="team-member-card position-relative">
-                      <img src="images/team/team2.png" alt="team" />
-                      <div className="position-absolute team-member-overlay position-relative sh-pall-40 trans-03">
-                        <div className="team-member-social d-flex sh-white-font trans-03">
-                          <a href="/#">
-                            <i className="fa fa-facebook"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-twitter"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-instagram"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-vk"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-linkedin"></i>
-                          </a>
-                        </div>
-                        <div className="team-member-info sh-pb-60 trans-03 position-absolute">
-                          <h5 className="sh-white-font">Sondra Pollard</h5>
-                          <p className="sh-gray-font sh-mb-0 sh-pt-5 sh-tw-4">Barber</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="team-member-card position-relative">
-                      <img src="images/team/team3.png" alt="team" />
-                      <div className="position-absolute team-member-overlay position-relative sh-pall-40 trans-03">
-                        <div className="team-member-social d-flex sh-white-font trans-03">
-                          <a href="/#">
-                            <i className="fa fa-facebook"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-twitter"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-instagram"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-vk"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-linkedin"></i>
-                          </a>
-                        </div>
-                        <div className="team-member-info sh-pb-60 trans-03 position-absolute">
-                          <h5 className="sh-white-font">Sondra Pollard</h5>
-                          <p className="sh-gray-font sh-mb-0 sh-pt-5 sh-tw-4">Barber</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="team-member-card position-relative">
-                      <img src="images/team/team4.png" alt="team" />
-                      <div className="position-absolute team-member-overlay position-relative sh-pall-40 trans-03">
-                        <div className="team-member-social d-flex sh-white-font trans-03">
-                          <a href="/#">
-                            <i className="fa fa-facebook"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-twitter"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-instagram"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-vk"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-linkedin"></i>
-                          </a>
-                        </div>
-                        <div className="team-member-info sh-pb-60 trans-03 position-absolute">
-                          <h5 className="sh-white-font">Sondra Pollard</h5>
-                          <p className="sh-gray-font sh-mb-0 sh-pt-5 sh-tw-4">Barber</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="team-member-card position-relative">
-                      <img src="images/team/team5.png" alt="team" />
-                      <div className="position-absolute team-member-overlay position-relative sh-pall-40 trans-03">
-                        <div className="team-member-social d-flex sh-white-font trans-03">
-                          <a href="/#">
-                            <i className="fa fa-facebook"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-twitter"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-instagram"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-vk"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-linkedin"></i>
-                          </a>
-                        </div>
-                        <div className="team-member-info sh-pb-60 trans-03 position-absolute">
-                          <h5 className="sh-white-font">Sondra Pollard</h5>
-                          <p className="sh-gray-font sh-mb-0 sh-pt-5 sh-tw-4">Barber</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="team-member-card position-relative">
-                      <img src="images/team/team6.png" alt="team" />
-                      <div className="position-absolute team-member-overlay position-relative sh-pall-40 trans-03">
-                        <div className="team-member-social d-flex sh-white-font trans-03">
-                          <a href="/#">
-                            <i className="fa fa-facebook"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-twitter"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-instagram"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-vk"></i>
-                          </a>
-                          <a href="/#">
-                            <i className="fa fa-linkedin"></i>
-                          </a>
-                        </div>
-                        <div className="team-member-info sh-pb-60 trans-03 position-absolute">
-                          <h5 className="sh-white-font">Sondra Pollard</h5>
-                          <p className="sh-gray-font sh-mb-0 sh-pt-5 sh-tw-4">Barber</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Team end !*/}
+      <Team />
       {/* Reservation !*/}
       <section id="sh-reservation" className="reservation-section sh-mt-100">
         <div className="container">

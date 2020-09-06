@@ -3,6 +3,8 @@ import Calendar from '../UI/Calendar/Calendar.jsx';
 
 export default function HeaderDatePicker(props) {
   const [date, setDate] = React.useState(new Date());
+  const [isPopUpOpen, setPopUpState] = React.useState(false);
+  const calendar = React.useRef(null);
 
   const {
     shortMonthNames = [
@@ -21,13 +23,33 @@ export default function HeaderDatePicker(props) {
     ],
   } = props;
 
-  const handleDateChange = (date) => setDate(date);
+  React.useEffect(() => {
+    document.body.addEventListener('click', bodyClickHandler);
+  }, []);
+
+  const bodyClickHandler = (e) => {
+    if (!e.path.includes(calendar.current)) {
+      setPopUpState(false);
+    }
+  };
+
+  const togglePopUp = () => {
+    setPopUpState(!isPopUpOpen);
+  };
+
+  const handleDateChange = (date) => {
+    setDate(date);
+    setPopUpState(!isPopUpOpen);
+  };
+
   return (
-    <div className="sh-datepicker-box sh-pall-20">
+    <div ref={calendar} className="sh-datepicker-box sh-pall-20">
       <div className="header-reservation-title sh-grey-font sh-tw-3 text-center">
         <span>choose date</span>
       </div>
-      <div className="header-reservation-data-box sh-white-font d-flex justify-content-center">
+      <div
+        onClick={togglePopUp}
+        className="header-reservation-data-box sh-white-font d-flex justify-content-center">
         <div className="header-reservation-day lora">
           <span id="sh-header-datepicker-day">{date.getDate()}</span>
         </div>
@@ -39,9 +61,8 @@ export default function HeaderDatePicker(props) {
             <i className="fa fa-chevron-down"></i>
           </div>
         </div>
-        <input id="sh-header-datepicker" type="text" />
       </div>
-      <Calendar onChange={handleDateChange} selectedDate={date} />
+      {isPopUpOpen && <Calendar onChange={handleDateChange} selectedDate={date} position="top" />}
     </div>
   );
 }
